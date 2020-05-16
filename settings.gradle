@@ -1,0 +1,5 @@
+rootProject.name='ComponentDemo'
+include ':app'
+include ':component-arouter'
+include ':component-commcore'
+include ':component-ads'

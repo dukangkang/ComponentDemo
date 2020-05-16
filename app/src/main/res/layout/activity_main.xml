@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="宿主"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/host_test"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="打开Test页面"
+        android:gravity="center"
+        android:layout_below="@+id/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/host_fragment"
+        android:layout_below="@+id/host_test"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ffff00"/>
+
+    <FrameLayout
+        android:id="@+id/host_adview"
+        android:layout_below="@+id/host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"/>
+</RelativeLayout>
